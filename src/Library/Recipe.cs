@@ -35,7 +35,13 @@ namespace Full_GRASP_And_SOLID.Library
                     $"usando '{step.Equipment.Description}' durante {step.Time} minutos");
             }
         }
-        public void GetProductionCost()
+        /*
+        Decidí agregar el método de GetProductionCost a la clase Recipe, aprovechando que esta ultima es la encargada de conocer cada paso de la receta
+        y por ende todos los ingredientes que se necesitan para tener el FinalProduct.
+        Pese a que intenté hacer una clase específica para el total de producción, se me hizo complicado poder manejarme con los parámetros y atributos.
+        
+        */
+        public void GetProductionCost()                                            
         {
             double SumaCostosIng=0;
             double SumaCostosEquip=0;
